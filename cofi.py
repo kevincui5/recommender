@@ -17,12 +17,8 @@ plt.tight_layout()
 plt.show()
 
 
-mat2 = scipy.io.loadmat('ex8_movieParams.mat')
-Theta = mat2["Theta"]
-X = mat2["X"]
-num_features = mat2["num_features"]
-num_movies = mat2["num_movies"]
-num_users = mat2["num_users"] 
+
+
 
 
 import loadMovieList
