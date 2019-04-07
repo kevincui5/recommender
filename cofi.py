@@ -7,15 +7,15 @@ Y = mat["Y"]
 #the indicator matrix
 R = mat["R"]
 
+#visualize the movie rating matrix Y 
 import matplotlib.pyplot as plt
 
 fig, ax = plt.subplots(nrows=1, figsize=(15,10))
-
 ax.imshow(Y, extent=[0,100,0,1], aspect='auto')
 ax.set_title('Auto-scaled Aspect')
-
 plt.tight_layout()
 plt.show()
+
 
 mat2 = scipy.io.loadmat('ex8_movieParams.mat')
 Theta = mat2["Theta"]
