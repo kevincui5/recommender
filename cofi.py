@@ -16,10 +16,6 @@ ax.set_title('Auto-scaled Aspect')
 plt.tight_layout()
 plt.show()
 
-
-
-
-
 #simply load movie_ids.txt file, which contains mapping of movie names to ids
 import loadMovieList
 movieList = loadMovieList.Func()
@@ -55,6 +51,7 @@ Ymean, Ynorm = normalizeRatings.Func(Y, R)
 num_movies, num_users = np.shape(Y)
 #a somewhat arbitrary number.  Can be thought of as being movie genres
 num_features = 10
+#random initialize X and Theta
 # by using standard_normal, there is no need to feature scale the parameter
 X = np.random.standard_normal(num_movies * num_features) 
 Theta = np.random.standard_normal(num_users * num_features)
