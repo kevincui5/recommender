@@ -1,4 +1,4 @@
-The problem come from Andrew Ng's machine learning course projects from Coursera, and 
+The problem comes from Andrew Ng's machine learning course projects from Coursera, and 
 I'd like to implement them in python instead of matlab/octave
 
 Implement a movie recommender system using collaborative filtering learning
